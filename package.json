@@ -1,0 +1,38 @@
+{
+  "name": "react-dashboard-postgres-server",
+  "version": "1.0.0",
+  "description": "Backend server for react-dashboard with postgres DB",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "pg:seed": "ts-node seeding.ts",
+    "build": "npx tsc",
+    "dev-start": "concurrently \"npx tsc --watch\" \"nodemon -q index.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "aloysius.kieth",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18",
+    "pg": "^8.7.3",
+    "ts-node": "^10.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.0",
+    "@types/pg": "^8.6.5",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

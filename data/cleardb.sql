@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS employees;
+
+-- DROP DATABASE IF EXISTS employees;
+-- CREATE DATABASE IF NOT EXISTS employees;
